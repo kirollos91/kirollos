@@ -1,0 +1,560 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Profile</title>
+        <meta charset="utf-8" />
+        <meta name="author" content="kirollos samir"/>
+        <meta name="description" content="kirollos samir profile" >
+        <meta name="keywords" content="kirollos,samir,profile" > 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="icon" href="https://1.bp.blogspot.com/-ySyms4YbxBM/X4x9evicy-I/AAAAAAAAG58/Prn1_dfuH6Ie3IrDnTy90F-pbfclLD8KgCLcBGAsYHQ/s225/images.png"> 
+        <style>
+            *
+            {
+                margin:0;
+                padding:0;
+            }
+
+            /*=============================header=================================*/
+
+            /*=============================header icon=================================*/
+            header
+            {
+                height:100px;
+                width:100%;
+                background-image:linear-gradient(to left,blue,rgba(9, 9, 189, 0.774));
+
+            }
+            header a
+            {
+                color:black;
+            }
+            #logoBox
+            {
+                width:30%;
+                height:100%;
+                float:left;
+                background-color:wheat;
+            }
+            #nameHeader
+            {
+                float:left;
+                line-height:100px;
+                margin-left:5px;
+                
+            }
+            #imgLogo
+            {
+                
+                float:left;
+                height:100%;
+                border-radius:20%;
+            }
+            
+            /*=============================header nav=================================*/
+            
+            nav
+            {
+                width:70%;
+                float:right;
+                text-align:right;
+                
+            }
+            
+            nav a
+            {
+                text-decoration:none;
+                color:white;
+              
+                font-weight:bold;
+                font-size:larger;
+              	transition:all .2s ease-in-out;
+            }
+            nav a:hover
+            {
+                background-color:white;
+                color:navy;
+                height:100%;
+                width:100%;
+                display:inline-block;
+                border-radius:50%;
+              
+            }
+            nav li
+            {
+                display:inline-block;
+                /*padding:0 10px;*/
+                line-height:100px;
+                padding-left:1%;
+                margin-left:10px;
+                /*background-color:black;*/
+                text-align:center;
+
+            }
+            nav li:hover
+            {
+                /*background-color:rgba(255,255,255,0.9);*/
+            }
+            #dropButtom
+            {   
+                background-image:linear-gradient(to left,blue,rgba(9, 9, 189, 0.774));
+                position:absolute;
+                z-index:1;
+                padding: 0;
+                margin: 0;
+                display: none;
+                width:7%;
+                
+                
+            }
+            #dropButtom a
+            {
+                display: block;
+                
+                height: 50px;
+                line-height: 50px;
+              	
+            }
+            #dropButtom a:hover
+            {
+                border-radius:50%;
+                height: 50px;
+                line-height: 50px;
+            }
+            #dropHover:hover #dropButtom
+            {
+                display:block;
+            }
+
+            /*=============================main=================================*/
+
+            main
+            {
+                border-top:3px solid white;
+                width:100%;
+                height:450px;
+                background-color:rgb(236, 218, 218);
+                /*clip-path: polygon(30% 0%,95% 0%,85% 100%,5% 100%);*/
+                /*animation-name:changebackground;
+                animation-duration:2s;
+                animation-iteration-count:infinite;*/
+
+            }
+            main img
+            {
+                width:100%;
+                height:100%;
+            }
+           /* @keyframes changebackground
+            {
+                0%{background-color:white;} 50%{background-color:rgb(255,55,55);} 100%{background-color:black;} 
+            }*/
+
+            /*=============================main article=================================*/
+
+            #article
+            {
+                width:77%;
+                height:450px;
+                float:left;
+                
+                position:relative;
+            }
+            #dBox
+            {
+                position:absolute;
+                width:100%;
+                height:100%;
+                
+            
+                left:50%;
+                top:50%;
+                transform:translate(-50%,-50%);
+                
+            } 
+
+             /*=============================aside=================================*/
+
+             aside
+            {
+                width:23%;
+                height:100%;
+                float:right;
+                background-image:url("https://1.bp.blogspot.com/-N1G75-qEdb0/XsxxuHacvBI/AAAAAAAAGuo/ci3T_qgn1wYH-cavilTpQ-OS69-yaPx_wCK4BGAsYHg/frame-design-vector-908602.jpg");
+                background-repeat: no-repeat;
+                background-size:100% 450px;
+				
+             
+                /*position: relative;*/
+            }
+        
+            /*#h1Aside1
+            {   
+                left:13%;
+                top:100px;
+                position:absolute;
+                
+            }
+            #h1Aside2
+            {   
+                left:13%;
+                top:130px;
+                position:absolute;
+                
+            }*/
+            #tableAside
+            {
+                margin-top: 15%;
+            }
+          #tableAside2
+          {
+          	margin-top:-15px;
+          }
+            #tableAside,#tableAside2,#tableAside3
+            {
+                width:100%;
+                color:navy;
+                display: flex;
+                justify-content:center;
+                
+                
+            }
+            .h1Aside
+            {
+                text-align:center;
+            }
+            #soical-media
+            {
+                margin-top:10%;
+                padding-top: 5%;
+                padding-bottom: 3%;
+                border-bottom:2px solid navy;
+                display: flex;
+                justify-content: center;
+                border-top:2px solid navy;
+            }
+            #soical-media img
+            {
+                
+                
+                width:45px;
+                height:45px;
+                padding-left:5px;
+                padding-right:5px;
+                transition:all 1s ease-in-out;
+            }
+            #soical-media img:hover
+            {
+                width:55px;
+                height:55px;
+                
+
+            }
+            /*=============================footer=================================*/
+
+            footer 
+            {	
+              height:110px;
+              width:100%
+				float:right;
+              
+             background-image:linear-gradient(to right,black,rgba(9, 9, 189, 0.774));
+              
+            }
+
+            /*=============================Mobile=================================*/
+           @media all
+           {
+
+           }
+           @media print
+           {
+
+           }
+           @media only screen and (min-width:925px) and (max-width:1250px)
+           {
+                #logoBox
+                {
+                    width:35%;
+                }
+                nav
+                {
+                    width:65%;
+                }
+               
+                #article
+                {
+                    width:65%;
+
+                }
+                aside
+                {
+                    width:35%;
+                    
+                }
+                #soical-media
+                {
+                    margin-top:20%;
+                }
+
+           }
+           @media only screen and (max-width:924px) and (min-width:802px)
+           {
+                #logoBox
+                {
+                    width:40%;
+                }
+                nav
+                {
+                    width:60%;
+                }
+                #article
+                {
+                    width:60%;
+                    
+                    
+                }
+                aside
+                {
+                    width:40%;
+                   
+                    
+                }
+                #soical-media
+                {
+                    margin-top:20%;
+                }
+           }
+           @media only screen and (max-width:801px)
+           {
+               header,main
+               {
+                   height:auto;
+                   float:none; 
+               }
+               #logoBox
+               {
+
+                   width:100%;
+                   text-align:center;
+                  
+                   
+               }
+               #nameHeader
+               {
+                float:none;
+                
+                
+               }
+               #imgLogo
+               {
+                float:none;
+                padding-top:10px;
+                width:40%;
+               }
+               #logoBox a
+               {
+                text-decoration:none;
+               }
+               nav
+               {
+                   width:100%;
+                   text-align:center;
+                 	font-size:small;
+                   background-image:linear-gradient(to left,blue,rgba(9, 9, 189, 0.774));
+                   float: none;
+               }
+               nav la{
+             	padding-left:2px;
+                margin-left:2px;
+               }
+               aside
+               {
+                   width:100%;
+                   height: 550px;
+                   background-size: 100% 550px;
+                   padding-top:5px;
+                  
+                  
+               }
+               #soical-media
+                {
+                    margin-top:6%;
+                }
+                #article
+                {
+                    width:100%;
+                    height:230px;
+                    float:left;
+                    
+                }
+                table
+                {
+                    width:100%;
+                    text-align: center;
+                    display: flex;
+                    justify-content: center;
+                    
+                }
+                #skill
+                {
+                    
+                    display: flex;
+                    justify-content: center;
+                    
+
+                }
+                #skill2
+                {
+                   
+                    display: flex;
+                    justify-content: center;
+                    
+
+                }
+                #dropButtom
+                {
+                    width:30%;
+                }
+
+               
+           }
+           @media only screen and (max-width:500px)
+           {
+
+           }
+           @media only screen and (orientation:landscape)
+           {
+               
+           }
+           @media print
+           {
+               nav
+               {
+                   display: none;
+               }
+               #article
+               {
+                   width:75%;
+               }
+               #dBox
+               {
+                   width:80%;
+               }
+               #logoBox
+               {
+                   width:40%;
+               }
+               aside
+               {
+                   width:25%;
+               }
+           }
+        </style>
+    </head>
+    <body>       
+        <header>
+            <span id="logoBox">
+                
+                <a href="https://home-kiropleaser.blogspot.com"><img id="imgLogo" src="https://1.bp.blogspot.com/-ySyms4YbxBM/X4x9evicy-I/AAAAAAAAG58/Prn1_dfuH6Ie3IrDnTy90F-pbfclLD8KgCLcBGAsYHQ/s225/images.png" alt="logo"></a>
+                <a href=""><h1 id="nameHeader">kirollos samir</h1></a>
+            </span>
+            <nav>
+                <ul>
+                    
+                    <li><a href="https://home-kiropleaser.blogspot.com">Home</a></li>
+                    <li><a href="https://github.com/kirollos91/My-Certificate">My Certificate</a></li>
+                    <li onmouseover="dropButtom1();" onmouseout="dropButtom2()" id="dropHover"><a>Languages</a>
+                        <div id="dropButtom">
+                            <a href="">Java</a>
+                            <a href="">C#</a>
+                            <a href="">Html</a>
+                            <a href="">Css</a>
+                            <a href="">JavaScript</a>
+                          	<a href="">PHP</a>
+                            <a href="">English</a>
+                            <a href="">Photoshop</a>
+                        </div>
+                    </li>
+                    
+                    <li><a href="https://profile-kiropleaser.blogspot.com">My Profile</a></li>
+                </ul>
+            </nav>
+        </header>
+       
+        <main>
+            <!--<img src="image/background4.jpg">-->
+            
+           
+            <aside>
+                <table id="tableAside">
+                     <tr>
+                        <td colspan="4" ><h1 class="h1Aside" id="h1Aside1">Name: Kirollos samir</h1></td>
+                     </tr>
+                     <tr>
+                        <td colspan="4"><h1 class="h1Aside">City: Alexandria,Egypt</h1></td>
+                     </tr>
+                     <tr>
+                         <td colspan="4"><h1 class="h1Aside" id="h1Aside2">Birth:9-March-1991</h1></td>
+                     </tr>
+                     <tr>
+                        <td colspan="4"><h4 class="h1Aside" id="h1Aside3">Email:kirollos.samir.91@gmail.com</h4></td>
+                    </tr>
+                     <tr>
+                         <td colspan="4"><h1 class="h1Aside" id="h1Aside3">Junior programmer</h1></td>
+                     </tr> 
+                     
+                     </table>
+                     <table id="tableAside2">
+                     <tr id="skill">
+                       
+                         <td colspan=""><h3 class="h1Aside1" id="h1Aside5">Html,</h3></td>
+                         <td colspan=""><h3 class="h1Aside1" id="h1Aside6">Css,</h3></td>
+                         <td colspan=""><h3 class="h1Aside1" id="h1Aside7">JavaScript,</h3></td><br>
+                         <td colspan=""><h3 class="h1Aside1" id="h1Aside8">Jquery,</h3></td>
+                       	 <td colspan=""><h3 class="h1Aside1" id="h1Aside9">php,</h3></td>
+                         
+                     </tr>
+                     <tr id="skill2">
+                         
+                         <td colspan="1"><h3 class="h1Aside1" id="h1Aside11">Java,</h3></td>
+                         <td colspan="1"><h3 class="h1Aside1" id="h1Aside12">C#,</h3></td>
+                         <td colspan="1"><h3 class="h1Aside1" id="h1Aside12">python.</h3></td>
+                        
+                         
+                     </tr>
+                     </table>
+                     <table id="tableAside3">
+                     <tr id="soical-media">
+                        <td><a href="https://www.facebook.com/kiro.samir.9883"><img src="https://2.bp.blogspot.com/-7O0gRhe_Cdg/XrDMnbgNBlI/AAAAAAAAGoQ/R73tiOA_mskZ4uPzGlU8GvpoMoPYwDGEgCLcBGAsYHQ/s1600/facebook.png" alt="facebook" title="facebook"></a></td>
+                        <td><a href="https://www.instagram.com/kiro.kiro.29/"><img src="https://3.bp.blogspot.com/-hakfJLIXV2Y/XrDMnBJxdTI/AAAAAAAAGoI/up_h--jDAN069Nl7KYyKedgQ6a9De4h4QCLcBGAsYHQ/s1600/instagram.png" alt="instagram" title="instagram"></a></td>
+                        <td><a href="https://twitter.com/kiro34255049"><img src="https://2.bp.blogspot.com/-mvk3YbGQviE/XrDMn40TSMI/AAAAAAAAGoY/qTx8nhggOoUT2gVHF_sGTYAhHT-u1wQNwCLcBGAsYHQ/s1600/twitter.png" alt="twitter" title="twitter"></a></td>
+                        <td><a href="https://youtube.com/user/koko01044"><img src="https://4.bp.blogspot.com/-xVG7ql4Dr2s/XrDMoJaK4YI/AAAAAAAAGoc/SsBGW6jdZdMzhqZ8VA94XUh8Y6NXFvXMACLcBGAsYHQ/s1600/youtube.png" alt="youtube" title="youtube"></a></td>
+                        <td><a href="https://github.com/kirollos91"><img src="https://1.bp.blogspot.com/-LLgHUFi9LVM/XrcbiUgr7mI/AAAAAAAAGqI/3wyyAegu0mAIoXUAEABTTIb_Ki3LFEBiwCLcBGAsYHQ/s1600/github-icon2.png" alt="github" title="github"></a></td>   
+                    </tr>
+                </table> 
+                 
+             </aside>
+             <atricle id="article">
+                <div id="dBox">
+                    <img src="https://4.bp.blogspot.com/-slIX_SjN4ic/XrMUsL21dVI/AAAAAAAAGpM/f-4VIbQmZCooBEbepPi_AehMYRcerd9bgCLcBGAsYHQ/s1600/background4.jpg">
+                </div>
+            </atricle>
+        </main>
+        <footer>
+          <div id="footer">
+          	
+          </div>
+        </footer>
+        <script>
+            function dropButtom1()
+            {
+                document.getElementById('dropButtom a').style.display = "block";
+            }
+            function dropButtom2()
+            {
+                document.getElementById('dropButtom a').style.display = "none";
+            }
+        </script>
+    </body>
+</html>
